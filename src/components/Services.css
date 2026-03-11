@@ -1,0 +1,64 @@
+.services-section {
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.service-card {
+  background-color: var(--bg-color);
+  padding: 2.5rem 2rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.service-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(212, 175, 55, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.service-icon {
+  color: var(--accent-color);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.service-description {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.service-price {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 1rem;
+  display: inline-block;
+}
